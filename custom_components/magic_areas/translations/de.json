@@ -22,14 +22,14 @@
         "title": "Merkmalsauswahl",
         "description": "Wählen Sie die Funktionen aus, die Sie für diesen Bereich aktivieren möchten. Eine neue Menüoption zum Konfigurieren der Funktion wird angezeigt, wenn Konfigurationsoptionen für diese Funktion vorhanden sind.",
         "data": {
-          "climate_groups": "Klimagruppen gründen",
+          "climate_groups": "Esrellen von Klimagruppen ",
           "media_player_groups": "Erstellen von Media Player-Gruppen",
-          "light_groups": "Lichtgruppen erstellen",
-          "cover_groups": "Erstellen von Deckungsgruppen",
+          "light_groups": "Estellen von Lichtgruppen ",
+          "cover_groups": "Erstellen von Beschattungsgruppen",
           "area_aware_media_player": "Bereichsabhängiger Mediaplayer",
-          "aggregates": "Erstellen Sie aggregierte Sensoren",
-          "health": "Erstellen Sie Integritätssensoren",
-          "presence_hold": "Anwesenheitshalteschalter erstellen"
+          "aggregates": "Erstellen von aggregierte Sensoren",
+          "health": "Erstellen von Integritätssensoren",
+          "presence_hold": "Erstellen von Anwesenheitshalteschalter "
         }
       },
       "show_menu": {
@@ -37,10 +37,10 @@
         "description": "Magic Areas führt standardmäßig eine grundlegende Anwesenheitserkennung durch, Sie können jedoch seine volle Leistungsfähigkeit nutzen, indem Sie die erweiterte Statusverfolgung konfigurieren, Ihre Anwesenheitsverfolgungsparameter anpassen und unsere magischen Funktionen aktivieren! Optionen werden nicht gespeichert, es sei denn, Sie wählen „Speichern und beenden“.",
         "menu_options": {
           "area_config": "Grundlegende Bereichsoptionen",
-          "secondary_states": "Erweiterte Gebietsstatusverfolgung",
+          "secondary_states": "Erweiterte Bereichssstatusverfolgung",
           "presence_tracking": "Optionen zur Anwesenheitsverfolgung",
           "select_features": "Merkmalsauswahl",
-          "finish": "Sicherer Ausgang",
+          "finish": "Konfiguration endgültig speichern",
           "feature_conf_health": "Konfigurieren des Integritätssensors",
           "feature_conf_climate_groups": "Klimagruppen konfigurieren",
           "feature_conf_light_groups": "Lichtgruppen konfigurieren",
@@ -117,7 +117,7 @@
       },
       "feature_conf_climate_groups": {
         "title": "Feature: Klimagruppen",
-        "description": "Gruppieren und steuern Sie alle Klimaelemente in einem Gebiet. Mit dieser Funktion können Klimaelemente automatisch entsprechend dem Zustand eines Gebiets gesteuert werden.",
+        "description": "Gruppieren und steuern Sie alle Klimaelemente in einem Bereich. Mit dieser Funktion können Klimaelemente automatisch entsprechend dem Zustand eines Bereiches gesteuert werden.",
         "data": {
           "turn_on_state": "Staat soll sich gegen die Klimagruppe wenden."
         },
@@ -126,13 +126,13 @@
         }
       },
       "secondary_states": {
-        "title": "Erweiterte Gebietsstatusverfolgung",
+        "title": "Erweiterte Bereichssstatusverfolgung",
         "description": "Sie können [sekundäre Zustände](https://github.com/jseidl/hass-magic_areas/wiki/Area-State) für einen magischen Bereich aktivieren, indem Sie ihm eine Entität zuweisen. Sekundäre Zustände werden von Funktionen verwendet, um Lichter nur einzuschalten, wenn es dunkel ist, oder um Klimageräte erst nach einer „längeren“ Zeitspanne einzuschalten oder um keine Benachrichtigungen an einen Bereich zu senden, wenn dieser im „Ruhezustand“ ist.",
         "data": {
           "dark_entity": "Lichtsensor des Bereichs",
           "sleep_entity": "Entität zum Verfolgen des Schlafzustands eines Bereichs",
           "sleep_timeout": "Wie lange wird der Bereich warten, bevor der Status im Ruhezustand gelöscht wird?",
-          "accent_entity": "Entität zur Verfolgung des akzentuierten Zustands eines Gebiets",
+          "accent_entity": "Entität zur Verfolgung des akzentuierten Zustands eines Bereiches",
           "extended_time": "Der Bereich wird nach einer so langen Belegung als „erweitert“ markiert",
           "extended_timeout": "Wie lange wird der Bereich warten, bevor der Status gelöscht wird, wenn er sich im erweiterten Status befindet?"
         },
@@ -178,7 +178,7 @@
   "entity": {
     "binary_sensor": {
       "area_state": {
-        "name": "Gebiet Staat"
+        "name": "Status Bereich"
       },
       "health_problem": {
         "name": "Bereich Gesundheit"
@@ -218,7 +218,7 @@
         "name": "Farbtöne"
       },
       "cover_group_shutter": {
-        "name": "Fensterläden"
+        "name": "Rolläden"
       },
       "cover_group_window": {
         "name": "Windows"
